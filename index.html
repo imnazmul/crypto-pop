@@ -24,8 +24,8 @@
         <h2 class="text-lg lg:text-2xl">Crypto-Pop</h2>
       </div>
       <div class="hidden lg:flex gap-8 mt-1">
-        <div><p>Price Updates</p></div>
-        <div><p>Calculator</p></div>
+        <div class="cursor-pointer"><p>Price Updates</p></div>
+        <div class="cursor-pointer"><p>Calculator</p></div>
       </div>
     </header>
     <main>
@@ -35,14 +35,15 @@
           <input
             class="p-1 lg:p-4 w-[80vw] lg:w-[400px] text-center text-lg rounded-md text-black"
             type="text"
-            name=""
-            id=""
-            placeholder="LTC" />
+            id="requested-crypto"
+            placeholder="LTC, BTC, ETH"
+            value="LTC"
+            disabled />
         </div>
         <div class="mx-auto">
           <h3 class="text-lg lg:text-2xl">
-            You're converting <span class="font-bold">LTC</span> to
-            <span class="font-bold">$USD</span>
+            You're converting <span id="toUSDtext" class="font-bold">LTC</span> to
+            <span class="font-bold">USD</span>
           </h3>
         </div>
       </section>
@@ -50,8 +51,8 @@
         class="w-full lg:w-[80vw] mx-auto mt-12 lg:mt-20 p-1 lg:p-24 bg-[#0F4C75] rounded-xl lg:flex justify-center gap-32">
         <div
           class="bg-[#BBE1FA] h-[30vh] w-full lg:h-72 lg:w-72 grid items-center place-items-center rounded-lg">
-          <div>
-            <img src="https://coinicons-api.vercel.app/api/icon/eth" />
+          <div id="crypto-image">
+            <!-- <img src="https://coinicons-api.vercel.app/api/icon/eth" /> -->
           </div>
           <div>
             <h2 class="text-black text-2xl italic">1 LTC = $60.65</h2>
@@ -81,5 +82,6 @@
     <footer class="bg-black text-center mt-14 p-4">
       <h2>Copyright 2024 - Nazmul</h2>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
