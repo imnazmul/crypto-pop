@@ -55,23 +55,23 @@
             <!-- <img src="https://coinicons-api.vercel.app/api/icon/eth" /> -->
           </div>
           <div>
-            <h2 class="text-black text-2xl italic">1 LTC = $60.65</h2>
+            <h2 class="text-black text-2xl italic" id="leftStatics"></h2>
           </div>
         </div>
         <div class="mt-4">
           <div
             class="w-full h-[25vh] lg:w-96 lg:h-56 bg-[#3282B8] flex items-center justify-center mb-4 rounded-lg">
-            <p class="text-2xl">1 LTC = $60.65</p>
+            <p class="text-2xl" id="resultTab"></p>
           </div>
           <div class="mb-4 text-black">
             <input
               class="rounded-md p-4 w-full lg:w-96"
               type="number"
-              id=""
+              id="amountInputed"
               placeholder="Enter the LTC amount." />
           </div>
           <div>
-            <button
+            <button id="calc"
               class="p-3 bg-[#3282B8] w-full lg:w-96 text-xl rounded-md hover:drop-shadow-lg">
               Calculate
             </button>
