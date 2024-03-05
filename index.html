@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Pop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-[#1B262C] text-white poppins">
+    <header class="w-[90vw] lg:w-[80vw] mx-auto mt-12 flex justify-between">
+      <div>
+        <h2 class="text-lg lg:text-2xl">Crypto-Pop</h2>
+      </div>
+      <div class="hidden lg:flex gap-8 mt-1">
+        <div><p>Price Updates</p></div>
+        <div><p>Calculator</p></div>
+      </div>
+    </header>
+    <main>
+      <section
+        class="w-full lg:w-[80vw] mx-auto mt-12 lg:mt-20 p-1 lg:p-4 bg-[#0F4C75] rounded-xl lg:flex lg:justify-center gap-32">
+        <div class="mb-4 text-center">
+          <input
+            class="p-1 lg:p-4 w-[80vw] lg:w-[400px] text-center text-lg rounded-md text-black"
+            type="text"
+            name=""
+            id=""
+            placeholder="LTC" />
+        </div>
+        <div class="mx-auto">
+          <h3 class="text-lg lg:text-2xl">
+            You're converting <span class="font-bold">LTC</span> to
+            <span class="font-bold">$USD</span>
+          </h3>
+        </div>
+      </section>
+      <section
+        class="w-full lg:w-[80vw] mx-auto mt-12 lg:mt-20 p-1 lg:p-24 bg-[#0F4C75] rounded-xl lg:flex justify-center gap-32">
+        <div
+          class="bg-[#BBE1FA] h-[30vh] w-full lg:h-72 lg:w-72 grid items-center place-items-center rounded-lg">
+          <div>
+            <img src="https://coinicons-api.vercel.app/api/icon/eth" />
+          </div>
+          <div>
+            <h2 class="text-black text-2xl italic">1 LTC = $60.65</h2>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div
+            class="w-full h-[25vh] lg:w-96 lg:h-56 bg-[#3282B8] flex items-center justify-center mb-4 rounded-lg">
+            <p class="text-2xl">1 LTC = $60.65</p>
+          </div>
+          <div class="mb-4 text-black">
+            <input
+              class="rounded-md p-4 w-full lg:w-96"
+              type="number"
+              id=""
+              placeholder="Enter the LTC amount." />
+          </div>
+          <div>
+            <button
+              class="p-3 bg-[#3282B8] w-full lg:w-96 text-xl rounded-md hover:drop-shadow-lg">
+              Calculate
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black text-center mt-14 p-4">
+      <h2>Copyright 2024 - Nazmul</h2>
+    </footer>
+  </body>
+</html>
