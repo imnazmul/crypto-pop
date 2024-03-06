@@ -30,12 +30,5 @@ const calc = document.getElementById("calc");
 calc.addEventListener('click', function () {
     const input = document.getElementById("amountInputed").value;
     let result = cryptoCurrentPrice * input;
-    Number(result).toFixed(3);
-    resultTabContent.innerText = `${input} LTC = ${result}`;
+    resultTabContent.innerText = `${input} LTC = ${Number(Number(result).toFixed(3))}`;
 })
-
-
-
-
-
-
