@@ -3,7 +3,7 @@ const resultTabContent = document.getElementById("resultTab");
 let cryptoCurrentPrice = '';
 
 document.getElementById("toUSDtext").innerText = `${cryptoRequested}`;
-document.getElementById("crypto-image").innerHTML = `<img src="https://coinicons-api.vercel.app/api/icon/${cryptoRequested.toLowerCase()}"/>`
+document.getElementById("crypto-image").innerHTML = `<img src="./img/ltc.svg"/>`
 
 
 
